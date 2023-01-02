@@ -68,7 +68,7 @@ Best performance measured on the test set is achieved with XGBoostRegressor mode
 
 | Metric  | Baseline model | excl. description features | incl. description features |
 | ------------- | ------------- | ------------- | ------------- |
-| RMSE  | 69.3  | 61.9  | 59.0  |
+| RMSE  | 69.3  | 61.9  | 58.6  |
 | R²  | 0.65  | 0.72  | 0.75  |
 
 Both RMSE and R² coefficient further improve using text-based description features. 
@@ -80,3 +80,7 @@ Prediction performance using our best model following hyper-parameter tuning:
 Our prediction error has a nice gaussian distribution shape. This means the error is equally over or below the ground thruth.
 
 ![](assets/predictions_errors.png)
+
+Using Shap library, we finally explore the influence of most influential features on price. These appear to be the room type, the capacity and various facility/service offering (paid-parking, fully-serviced, gym, elevator...). Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount.
+
+![](assets/features_shap_values.png)
