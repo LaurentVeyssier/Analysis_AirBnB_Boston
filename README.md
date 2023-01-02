@@ -74,4 +74,5 @@ Best performance measured on the test set is achieved with XGBoostRegressor mode
 Both RMSE and R² coefficient further improve using text-based description features. 
 
 Prediction performance using our best model following hyper-parameter tuning:
+
 ![](assets/predictions_vs_real.png)
