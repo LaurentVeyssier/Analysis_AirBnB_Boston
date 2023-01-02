@@ -1,20 +1,49 @@
 # Analysis_AirBnB_Boston
 
-# Project overview
-This is the first project of [Udacity's Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025). The objective is two-fold:
-- provide an insightful technical analysis of Airbnb offering in Boston, USA. Data from September 2022 has been used for this analysis which can be found in this readme file and associated jupyter notebook included in this repository.
-- write a blogpost explaining the findings in non-technical terms to address the largest, non-technical, audience. The associated blogpost can be found [here](https://laurentveyssier.github.io/Analysis_AirBnB_Boston/).
+![](../assets/catchy_intro.jpg)
 
-This analysis combines various techniques as our dataset requires numerical, statistical, NLP type of analysis. The project will be conducted following this framework:
-- Framing key relevant business questions worth analyzing
-- Data understanding
-- Data preparation for the analysis and modeling steps
-- Data analysis and modeling (including regression model for price prediction)
-- Result evaluation
-The deployment is not covered here. The trained model artifact could nevertheless be used for inference using an API.
+# Introduction
 
-# Acknowledgement and dataset overview
-The Boston datasets I used were up-to-date at the time of my analysis. These were extracted in September 2022 by Airbnb Inside and the originals can be found [here](http://insideairbnb.com/explore). Airbnb Inside regularly provides up-to-date datasets for most major cities around the world.
+Have you ever wondered about Airbnb rental price differencies between properties you could not clearly understand ? or thought such apartment looked somehow over-priced ?
+In this blogpost, we will explore Airbnb offering in Boston, USA.  The analysis dives into Airbnb data from September 2022 and answers four questions you may not know. Finally, our key findings might hopefully help you better understand the price-point of your next Airbnb reservation !
+
+So let's dive in the 4 questions we will cover together:
+1. What are the busiest times of the year to visit Boston? By how much do prices spike?
+2. Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston? Is there a before and after COVID era ?
+3. What is the vibe of each Boston neighborhood based on listing descriptions?
+4. How to predict the rental price of a new property ? Which are the features valued most by the hosts or those driving prices up ?
+
+# SUMMARY OF KEY FINDINGS
+
+**1.QUESTION #1: What are the busiest times of the year to visit Boston? By how much do prices spike?**
+
+Using the date and number of reviews as a proxy for rental demand, our analysis reveals large price seasonality following touristic periods.
+The busiest times of the year to visit Boston will be during the months of April and October as well as during summer from June till end of August, even extending till end of November as visible during 2018-2019. The prices will be inflated during these periods and one could find significantly lower prices in March or even September.
+With additional flexibility, it is worth noting prices are also much lower on Sundays and during the first half of a week. They are at their highest during Fridays to Saturdays.
+
+![](../assets/frequentation_vs_price.png)
+
+**2. QUESTION #2: Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston? Is there a before and after COVID era ?**
+
+Looking at the data over the last years, we can clearly see a growing trend in both the number of properties available and the number of visitors posting reviews about their stay. Additionally, following the observable drop due to the COVID lockdowns and travel restrictions, we believe that:
+- a rebound drove higher activity during the second part of 2021,
+- the level of visits has in the last months of 20222 stabilized back to pre-COVID levels.
+
+![](../assets/demand_vs_offer.png)
+
+
+**3. QUESTION #3: What is the vibe of each Boston neighborhood based on listing descriptions?**
+
+Hosts provide description of the neighborhood which we have used to determine the profile of each of them. While prices vary from neighborhood to neighborhood (details not discussed here but available in the full analysis - see at the bottom of this post), this can also be correlated with the vibe of each part of Boston. We looked for the adjectives used by the owners to get a feeling about each neighborhood. Additionally, we looked at the nouns and verbs mostly used to get some understanding of what each district has to offer.
+
+**4. QUESTION #4: How to predict the rental price of a new property ? Which are the features valued most by the hosts or those driving prices up ?**
+
+
+# Interested to go deeper into the analysis and its technical aspects?
+The detailed, step-by-step, analysis can be found [here](). The analysis leverages data science, machine learning and natural language processing tools and techniques driving the above conclusions.
+
+# Acknowledgement
+The Boston datasets are provided by Airbnb Inside and can be found [here](http://insideairbnb.com/explore). Airbnb Inside regularly provides up-to-date datasets for most major cities around the world.
 
 The datasets are composed of 3 files which can be found in the `Datasets` folder of this repository. Those 3 files cover:
 - Listings.csv which includes the full description of each properties, owner datails and several review kpis and scores
@@ -22,24 +51,10 @@ The datasets are composed of 3 files which can be found in the `Datasets` folder
 - Calendar.csv which includes property id, the daily rental price and availability by day from September 15, 2022 onwards. This file provides a snapshot of the reservations as of september and looking forward into the year 2023.
 
 # Key Business questions and project challenge
-The analysis answers 6 business questions as follows:
-1. Price seasonality during the year - By how much do prices spike?
-2. What are the busiest times of the year to visit Boston?
-3. Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston?
-4. Can you describe the vibe of each Boston neighborhood using listing descriptions?
-5. Can you predict the rental price of a new property based on available features ?
-6. Can the property text description from the host improve the prediction ?
+
 
 Key challenge comes from the following real-life constraint: We want to provide the best possible prediction model for an new Airbnb property assuming we will not have part of the datailed KPis regarding reviews and host. Indeed, this being a new property added to Airbnb, we assume we can only rely on the property detailed description, localization and service offering prepared by the future new host.
 
-# How to use and reproduce the analysis
-The detailed, step-by-step, analysis is performed in the jupyter notebook `Boston_Airbnb_analysis.ipynb` provided in the project repository.
-The notebook was executed under windows python v3.8 in a virtual environment. It will require a set of standard packages reflected by the list of imports found in the notebook. 
-The datasets are provided in the datasets folder.
-For additional model experiments during preliminary exploratory work please check out the other notebook `additional_modeling_experiments.ipynb`.
-
-# Answers to Business questions 1 to 5
-These can be found in the notebook with detailed working steps and conclusions.
 
 # Regression Model with `price` as target variable
 We will summarize here the results for Question 6. Detailed steps can be found in the notebook.
