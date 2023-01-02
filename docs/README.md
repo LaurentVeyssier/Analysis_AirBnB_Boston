@@ -69,7 +69,7 @@ We observed the steady growth in both Airbnb offering and the number of visits.
 
 Data analytics and natural language processing, applied to the short description of the neighborhoods from the host, enabled to prepare a profile of each of them. 
 
-Finally we used the characteristics of a property to train a machine learning model and predict the rental price of any property.
+Finally we used the characteristics of Airbnb properties to train a machine learning model and predict the rental price of a given location.
 
 Using specific tools, we explored the influence of main features on price. These appear to be the room type, the capacity and various facility/service offering like fully-serviced . Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount.
 
