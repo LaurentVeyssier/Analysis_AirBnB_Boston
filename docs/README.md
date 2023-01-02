@@ -68,7 +68,7 @@ Using specific tools, we explored the influence of main features on price. These
 
 
 # Interested to go deeper into the analysis and its technical aspects?
-The detailed, step-by-step, analysis can be found [here](). The analysis leverages data science, machine learning and natural language processing tools and techniques driving the above conclusions.
+The detailed, step-by-step, analysis can be found [here](https://github.com/LaurentVeyssier/Analysis_AirBnB_Boston). The analysis leverages data science, machine learning and natural language processing tools and techniques driving the above conclusions.
 
 
 # Acknowledgement
