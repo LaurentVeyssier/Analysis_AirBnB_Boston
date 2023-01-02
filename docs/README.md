@@ -14,7 +14,7 @@ So let's dive in the 4 questions we will cover together:
 3. What is the vibe of each Boston neighborhood based on listing descriptions?
 4. How to predict the rental price of a new property ? Which are the features valued most by the hosts or those driving prices up ?
 
-# SUMMARY OF KEY FINDINGS
+# OUR KEY FINDINGS
 
 **1.QUESTION #1: What are the busiest times of the year to visit Boston? By how much do prices spike?**
 
