@@ -1,7 +1,7 @@
 # Analysis_AirBnB_Boston
 
 # Project overview
-This is the first project of Udacity's Data Scientist Nanodegree. The objective is two-fold:
+This is the first project of [Udacity's Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025). The objective is two-fold:
 - provide an insightful technical analysis of Airbnb offering in Boston, USA. Data from September 2022 has been used for this analysis which can be found in this readme file and associated jupyter notebook included in this repository.
 - write a blogpost explaining the findings in non-technical terms to address the largest, non-technical, audience. The associated blogpost can be found [here](https://laurentveyssier.github.io/Analysis_AirBnB_Boston/).
 
