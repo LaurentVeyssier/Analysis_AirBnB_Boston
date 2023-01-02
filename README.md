@@ -81,6 +81,6 @@ Our prediction error has a nice gaussian distribution shape. This means the erro
 
 ![](assets/predictions_errors.png)
 
-Using Shap library, we finally explore the influence of most influential features on price. These appear to be the room type, the capacity and various facility/service offering (paid-parking, fully-serviced, gym, elevator...). Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount.
+Using Shap library, we finally explore the influence of most influential features on price. These appear to be the room type, the capacity and various facility/service offering (paid-parking, fully-serviced, gym, elevator...). Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount. Finally, the property localization through latitude and longitude also has an influence, diminishing prices as we move away from the center.
 
 ![](assets/features_shap_values.png)
