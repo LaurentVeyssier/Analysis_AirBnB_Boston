@@ -22,7 +22,7 @@ The datasets are composed of 3 files which can be found in the `Datasets` folder
 - Calendar.csv which includes property id, the daily rental price and availability by day from September 15, 2022 onwards. This file provides a snapshot of the reservations as of september and looking forward into the year 2023.
 
 # Key Business questions and project challenge
-The analysis will answer 6 business questions as follows:
+The analysis answers 6 business questions as follows:
 1. Price seasonality during the year - By how much do prices spike?
 2. What are the busiest times of the year to visit Boston?
 3. Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston?
