@@ -77,6 +77,6 @@ Prediction performance using our best model following hyper-parameter tuning:
 
 ![](assets/predictions_vs_real.png)
 
-Our prediction error distribution is nicely in the form of a gaussian. This means the error is equally over or below the ground thruth.
+Our prediction error has a nice gaussian distribution shape. This means the error is equally over or below the ground thruth.
 
 ![](assets/predictions_errors.png)
