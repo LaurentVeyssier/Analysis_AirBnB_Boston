@@ -16,7 +16,7 @@ So let's dive in the 4 questions we will cover together:
 
 # OUR KEY FINDINGS
 
-**1.QUESTION #1: What are the busiest times of the year to visit Boston? By how much do prices spike?**
+**QUESTION #1: What are the busiest times of the year to visit Boston? By how much do prices spike?**
 
 Using the date and number of reviews as a proxy for rental demand, our analysis reveals large price seasonality following touristic periods.
 The busiest times of the year to visit Boston will be during the months of April and October as well as during summer from June till end of August, even extending till end of November as visible during 2018-2019. The prices will be inflated during these periods and one could find significantly lower prices in March or even September.
@@ -24,7 +24,7 @@ With additional flexibility, it is worth noting prices are also much lower on Su
 
 ![](../assets/frequentation_vs_price.png)
 
-**2. QUESTION #2: Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston? Is there a before and after COVID ?**
+**QUESTION #2: Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston? Is there a before and after COVID ?**
 
 Looking at the data over the last years, we can clearly see a growing trend in both the number of properties available and the number of visitors posting reviews about their stay. Additionally, there is an observable drop in 2020 due to the COVID lockdowns and travel restrictions, yet we believe that:
 - a catch-up in tourism drove higher activity during the second part of 2021,
@@ -35,7 +35,7 @@ The below graph desmonstrates these points.
 ![](../assets/demand_vs_offering.png)
 
 
-**3. QUESTION #3: What is the vibe of each Boston neighborhood based on listing descriptions?**
+**QUESTION #3: What is the vibe of each Boston neighborhood based on listing descriptions?**
 
 Hosts provide a description of the neighborhood which we used to determine the profile of each surroundings. While prices vary from neighborhood to neighborhood (details not discussed here but available in the full analysis - see at the bottom of this post if you are interested), prices can also be influenced by the vibe of each part of Boston. To answer this question, we looked at the adjectives used by the owners to get a feeling about each neighborhood. Additionally, we looked at the most frequent nouns and verbs to shape an understanding of what each district has to offer.
 
@@ -50,7 +50,7 @@ You can find all 26 neighborhoods in my detailed analysis (link at the end of my
 ![](../assets/west_end.png)
 
 
-**4. QUESTION #4: How to predict the rental price of a new property ? Which are the features valued most by the hosts or those driving prices up ?**
+**QUESTION #4: How to predict the rental price of a new property ? Which are the features valued most by the hosts or those driving prices up ?**
 
 I took the challenge to train a machine learning model using relevant characteristics of a property to estimate its price-point. Provide information on localization (neighborhood, latitude, longitude), housing capacity (number of bedrooms, number of guests,...) and detailed list of services and facilities (bathrooms, appliances, facilities such as gym or paid parking...) and the model will suggest a rental price !
 
