@@ -41,7 +41,7 @@ For additional model experiments during preliminary exploratory work please chec
 # Answers to Business questions 1 to 5
 These can be found in the notebook with detailed working steps and conclusions.
 
-# Regression Model with `price` as target variable
+# Regression Model to predict `price` target variable
 We will summarize here the results for Question 6. Detailed steps can be found in the notebook.
 Because we want to propose a price-point for a new property, I chose to rely on features available in such situation. These cover:
 - property localization
@@ -81,6 +81,12 @@ Our prediction error has a nice gaussian distribution shape. This means the erro
 
 ![](assets/predictions_errors.png)
 
-Using Shap library, we finally explore the influence of most influential features on price. These appear to be the room type, the capacity and various facility/service offering (paid-parking, fully-serviced, gym, elevator...). Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount.
+Using Shap library, we finally explore the influence of most influential features on price. These appear to be the room type, the capacity and various facility/service offering (paid-parking, fully-serviced, gym, elevator...). Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount. Finally, the property localization through latitude and longitude also has an influence, diminishing prices as we move away from the center.
 
 ![](assets/features_shap_values.png)
+
+# Project conclusion
+
+The regression model achieves a RMSE of 58 and explains over 75% of the price variance. We have identified most influential features and those having less impact. Based on these results, a new host, missing price-point references, could use our model and findings to better assess a realistic price and leverage specific amenities particularly valued by guests.
+
+As next steps, it could be interesting to train-test a fully-connected neural network or to extend our approach to forecasting "daily" prices using the calendar dataset in order to apprehend price seasonality.
