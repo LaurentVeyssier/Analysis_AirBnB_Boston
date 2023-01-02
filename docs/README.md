@@ -5,6 +5,7 @@
 # INTRODUCTION
 
 Have you ever wondered why such Airbnb appartment was so expensive compared to other similar-looking alternatives ? or wished to find the best value-for-money bargain for your next vacations ?
+
 In this blogpost, we will explore Airbnb offering in Boston, USA.  The analysis dives into Airbnb data from September 2022 and answers four questions you may wish to know. Finally, our key findings might hopefully help you better understand the price-point of your next Airbnb reservation !
 
 So let's dive in the 4 questions we will cover together:
