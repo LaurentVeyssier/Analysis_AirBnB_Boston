@@ -32,16 +32,44 @@ The analysis will answer 6 business questions as follows:
 
 Key challenge comes from the following real-life constraint: We want to provide the best possible prediction model for an new Airbnb property assuming we will not have part of the datailed KPis regarding reviews and host. Indeed, this being a new property added to Airbnb, we assume we can only rely on the property detailed description, localization and service offering prepared by the future new host.
 
+# How to use and reproduce the analysis
+The detailed, step-by-step, analysis is performed in the jupyter notebook `Boston_Airbnb_analysis.ipynb` provided in the project repository.
+The notebook was executed under windows python v3.8 in a virtual environment. It will require a set of standard packages reflected by the list of imports found in the notebook. 
+The datasets are provided in the datasets folder.
+For additional model experiments during preliminary exploratory work please check out the other notebook `additional_modeling_experiments.ipynb`.
 
+# Answers to Business questions 1 to 5
+These can be found in the notebook with detailed working steps and conclusions.
 
+# Regression Model with `price` as target variable
+We will summarize here the results for Question 6. Detailed steps can be found in the notebook.
+Because we want to propose a price-point for a new property, I chose to rely on features available in such situation. These cover:
+- property localization
+- property capacity
+- property service offering referred as `amenities`
+- property description by the host to be posted onto Airbnb platform
 
+Under this constraint, I used a total of 5,841 features corresponding to:
+- 5 continuous variables: 'accommodates','bedrooms','beds','latitude','longitude'
+- 4 categorical variables encoded using one-hot vectors: 'property_type','room_type','bathrooms_text','neighbourhood_cleansed'
+These features capture the gist of the property localization, property type and capacity. These variables were complemented by 
+- 1,125 feature vectors corresponding to the items composing the `amenities` list at each property (1 item = 1 binary column vector encoding the presence of the item at each property)
+- Another sparse matrix corresponding to the top words extracted from the property `description` fields with 4,619 columns (or words). The sparse matrix corresponds to the word-occurence matrix following description corpus vectorization using nltk.
 
+ Training was performed on a dataset of 4,921 properties (following elimination of `price` outliers using 1.5 x IQR). 20% were reserved for model performance measure (test set).
 
+# Regression prediction performance
 
+Baseline performance excluding description-based features using ridge linear model:
+- RMSE: 60.3 USD
+- R² coefficient: 0.65
 
+Best performance achieved with XGBoostRegressor:
 
-
-
+| Metric  | excl. description features | incl. description features |
+| ------------- | ------------- | ------------- |
+| RMSE  | 61.9  | 59.6  |
+| R²  | 0.72  | 0.74  |
 
 
 
