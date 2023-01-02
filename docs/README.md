@@ -53,7 +53,9 @@ You can find all 26 neighborhoods in my detailed analysis (link at the end of my
 **4. QUESTION #4: How to predict the rental price of a new property ? Which are the features valued most by the hosts or those driving prices up ?**
 
 I took the challenge to train a machine learning model using relevant characteristics of a property to estimate its price-point. Provide information on localization (neighborhood, latitude, longitude), housing capacity (number of bedrooms, number of guests,...) and detailed list of services and facilities (bathrooms, appliances, facilities such as gym or paid parking...) and the model will suggest a rental price !
+
 Key price predictors appear to be the room type, the housing capacity and the facility/service offering which can justify pushing prices up. For example a gym, an elevator or a dedicated workspace get a premium as well those offering full serviced facility. Interestingly, properties with 1 bath seems to suffer reduced price. We could hypothetize that a shower is preferred and drives a premium. On the opposite, a dishwasher does not seem to attract much price premium. Finally, the localization (latitude and longitude) has an influence, with diminishing prices as we move away South and from the center.
+
 Using natural language processing to extract key information such as word frequecies from the description of the property brought additional precision to the prediction model.
 
 ![](../assets/predictions_vs_real.png)
