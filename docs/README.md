@@ -1,6 +1,6 @@
 # How would you price an Airbnb appartment in Boston using Machine Learning ?
 
-![](../assets/intro_2.png)
+![](assets/intro_2.png)
 
 # INTRODUCTION
 
@@ -22,7 +22,7 @@ Using the date and number of reviews as a proxy for rental demand, our analysis 
 The busiest times of the year to visit Boston will be during the months of April and October as well as during summer from June till end of August, even extending till end of November as visible during 2018-2019. The prices will be inflated during these periods and one could find significantly lower prices in March or even September.
 With additional flexibility, it is worth noting prices are also much lower on Sundays and during the first half of a week. They are at their highest during Fridays to Saturdays.
 
-![](../assets/frequentation_vs_price.png)
+![](assets/frequentation_vs_price.png)
 
 **QUESTION #2: Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston? Is there a before and after COVID ?**
 
@@ -32,7 +32,7 @@ Looking at the data over the last years, we can clearly see a growing trend in b
 
 The below graph desmonstrates these points.
 
-![](../assets/demand_vs_offering.png)
+![](assets/demand_vs_offering.png)
 
 
 **QUESTION #3: What is the vibe of each Boston neighborhood based on listing descriptions?**
@@ -41,13 +41,13 @@ Hosts provide a description of the neighborhood which we used to determine the p
 
 Below is an example depicting **Fenway** neighborhood. "Beautiful", "vibrant" and "historic" come first. Arts Museum, nightlife and access to numourous attractions finalize the picture.
 
-![](../assets/fenway.png)
+![](assets/fenway.png)
 
 Alternatively, **West End** emphasizes the proximity to the "amazing" Charles River, Cambridge and Harvard square, museums and other famous places from this "quiet" and "residential" neighborhood.
 
 You can find all 26 neighborhoods in my detailed analysis (link at the end of my post).
 
-![](../assets/west_end.png)
+![](assets/west_end.png)
 
 
 **QUESTION #4: How to predict the rental price of a new property ? Which are the features valued most by the hosts or those driving prices up ?**
@@ -60,7 +60,7 @@ Using natural language processing to extract key information such as word freque
 
 We explored the influence of main features on price. These appear to be the room type, the housing capacity and the facility/service offering such as fully-serviced places. Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount.
 
-![](../assets/predictions_vs_real.png)
+![](assets/predictions_vs_real.png)
 
 
 # CONCLUSION
