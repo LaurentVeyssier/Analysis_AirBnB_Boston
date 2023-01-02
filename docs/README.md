@@ -63,7 +63,14 @@ Using natural language processing to extract key information such as word freque
 
 # CONCLUSION
 
-The analysis of September 2022 Airbnb Boston data helped to identify the busiest periods to visit the city as well as the rental price dynamic closely following touristic activity. We also observed the steady growth in both Airbnb offering and the number of visits. Data analytics and natural language processing, applied to the short description of the neighborhoods from the host, enabled to prepare a profile of each of them. Finally we used the characteristics of a property to train a machine learning model and predict the rental price of any property.
+The analysis of September 2022 Airbnb Boston data helped to identify the busiest periods to visit the city as well as the rental price dynamic closely following touristic activity. 
+
+We observed the steady growth in both Airbnb offering and the number of visits. 
+
+Data analytics and natural language processing, applied to the short description of the neighborhoods from the host, enabled to prepare a profile of each of them. 
+
+Finally we used the characteristics of a property to train a machine learning model and predict the rental price of any property.
+
 Using specific tools, we explored the influence of main features on price. These appear to be the room type, the capacity and various facility/service offering like fully-serviced . Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount.
 
 
