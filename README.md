@@ -53,14 +53,14 @@ Under this constraint, I used a total of 5,841 features corresponding to:
 - 5 continuous variables: 'accommodates','bedrooms','beds','latitude','longitude'
 - 4 categorical variables encoded using one-hot vectors: 'property_type','room_type','bathrooms_text','neighbourhood_cleansed'
 These features capture the gist of the property localization, property type and capacity. These variables were complemented by 
-- 1,125 feature vectors corresponding to the items composing the `amenities` list at each property (1 item = 1 binary column vector encoding the presence of the item at each property)
-- Another sparse matrix corresponding to the top words extracted from the property `description` fields with 4,619 columns (or words). The sparse matrix corresponds to the word-occurence matrix following description corpus vectorization using nltk.
+- 1,125 feature vectors corresponding to the items composing `amenities` list at each property (1 item = 1 binary column vector encoding the item presence or not at each property)
+- Another sparse matrix corresponding to the top words occurence extracted from the property `description` field with 4,619 columns (or words). The sparse matrix corresponds to the word-occurence matrix from corpus of descriptions vectorized using nltk.
 
- Training was performed on a dataset of 4,921 properties (following elimination of `price` outliers using 1.5 x IQR). 20% were reserved for model performance measure (test set).
+ Analysis was performed on a dataset of size 4,921 rental properties (after elimination of `price` outliers using 1.5 x IQR). 20% were reserved for model performance evaluation and 80% used for training.
 
 # Regression prediction performance
 
-Baseline performance excluding description-based features using ridge linear model:
+Baseline performance measures without description-based features and using a ridge linear model:
 - RMSE: 60.3 USD
 - R² coefficient: 0.65
 
