@@ -13,7 +13,7 @@ This analysis combines various techniques as our dataset requires numerical, sta
 - Result evaluation
 The deployment is not covered here. The trained model artifact could nevertheless be used for inference using an API.
 
-# Dataset Acknowledgement and dataset overview
+# Acknowledgement and dataset overview
 The Boston datasets I used were up-to-date at the time of my analysis. These were extracted in September 2022 by Airbnb Inside and the originals can be found [here](http://insideairbnb.com/explore). Airbnb Inside regularly provides up-to-date datasets for most major cities around the world.
 
 The datasets are composed of 3 files which can be found in the `Datasets` folder of this repository. Those 3 files cover:
