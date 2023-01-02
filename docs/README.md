@@ -32,7 +32,7 @@ Looking at the data over the last years, we can clearly see a growing trend in b
 
 The below graph desmonstrates these points.
 
-![](../assets/demand_vs_offer.png)
+![](../assets/demand_vs_offering.png)
 
 
 **3. QUESTION #3: What is the vibe of each Boston neighborhood based on listing descriptions?**
