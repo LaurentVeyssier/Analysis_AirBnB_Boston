@@ -41,7 +41,7 @@ For additional model experiments during preliminary exploratory work please chec
 # Answers to Business questions 1 to 5
 These can be found in the notebook with detailed working steps and conclusions.
 
-# Regression Model with `price` as target variable
+# Regression Model to predict `price` target variable
 We will summarize here the results for Question 6. Detailed steps can be found in the notebook.
 Because we want to propose a price-point for a new property, I chose to rely on features available in such situation. These cover:
 - property localization
