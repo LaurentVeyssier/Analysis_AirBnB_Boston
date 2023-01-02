@@ -56,7 +56,7 @@ I took the challenge to train a machine learning model using relevant characteri
 
 Key price predictors appear to be the room type, the housing capacity and the facility/service offering which can justify pushing prices up. For example a gym, an elevator or a dedicated workspace get a premium as well those offering full serviced facility. Interestingly, properties with 1 bath seems to suffer reduced price. We could hypothetize that a shower is preferred and drives a premium. On the opposite, a dishwasher does not seem to attract much price premium. Finally, the localization (latitude and longitude) has an influence, with diminishing prices as we move away South and from the center.
 
-Using natural language processing to extract key information such as word frequecies from the description of the property brought additional precision to the prediction model.
+Using natural language processing to extract key information such as word frequencies from the owner's description brought additional precision to the prediction model.
 
 ![](../assets/predictions_vs_real.png)
 
