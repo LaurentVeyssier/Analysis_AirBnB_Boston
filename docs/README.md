@@ -1,6 +1,6 @@
 # How would you price an Airbnb appartment in Boston using Machine Learning ?
 
-![](../assets/intro.jpg)
+![](../assets/intro_2.jpg)
 
 # INTRODUCTION
 
