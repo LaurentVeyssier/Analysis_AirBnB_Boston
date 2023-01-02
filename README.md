@@ -64,12 +64,14 @@ Baseline performance measures without description-based features and using a rid
 - RMSE: 60.3 USD
 - R² coefficient: 0.65
 
-Best performance achieved with XGBoostRegressor:
+Best performance measured on the test set is achieved with XGBoostRegressor model using cross-validation:
 
 | Metric  | Baseline model | excl. description features | incl. description features |
 | ------------- | ------------- | ------------- | ------------- |
 | RMSE  | 60.3  | 61.9  | 59.0  |
 | R²  | 0.65  | 0.72  | 0.75  |
 
-Both RMSE and R² coefficient improve using text-based description features.
+Both RMSE and R² coefficient improve using text-based description features. 
 
+Prediction performance using our best model following hyper-parameter tuning:
+![]()
