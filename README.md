@@ -3,7 +3,7 @@
 # Project overview
 This is the first project of Udacity's Data Scientist Nanodegree. The objective is two-fold:
 - provide an insightful technical analysis of Airbnb offering in Boston, USA. Data from September 2022 has been used for this analysis which can be found in this readme file and associated jupyter notebook included in this repository.
-- write a blogpost explaining the findings in non-technical terms to address the largest, non-technical, audience. The associated blogpost can be found [here]().
+- write a blogpost explaining the findings in non-technical terms to address the largest, non-technical, audience. The associated blogpost can be found [here](https://laurentveyssier.github.io/Analysis_AirBnB_Boston/).
 
 This analysis combines various techniques as our dataset requires numerical, statistical, NLP type of analysis. The project will be conducted following this framework:
 - Framing key relevant business questions worth analyzing
@@ -74,4 +74,4 @@ Best performance measured on the test set is achieved with XGBoostRegressor mode
 Both RMSE and R² coefficient further improve using text-based description features. 
 
 Prediction performance using our best model following hyper-parameter tuning:
-![]()
+![](assets/predictions_vs_real.png)
