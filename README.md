@@ -1,11 +1,38 @@
-# Analysis_AirBnB_Boston_vs_Seattle
-Blogpost project for Udacity's Data Scientist Nanodegree
+# Analysis_AirBnB_Boston
+
+# Project overview
+This is the first project of Udacity's Data Scientist Nanodegree. The objective is two-fold:
+- provide an insightful technical analysis of Airbnb offering in Boston, USA. Data from September 2022 has been used for this analysis which can be found in this readme file and associated jupyter notebook included in this repository.
+- write a blogpost explaining the findings in non-technical terms to address the largest, non-technical, audience. The associated blogpost can be found [here]().
+
+This analysis combines various techniques as our dataset requires numerical, statistical, NLP type of analysis. The project will be conducted following this framework:
+- Framing key relevant business questions worth analyzing
+- Data understanding
+- Data preparation for the analysis and modeling steps
+- Data analysis and modeling (including regression model for price prediction)
+- Result evaluation
+The deployment is not covered here. The trained model artifact could nevertheless be used for inference using an API.
+
+# Dataset Acknowledgement and dataset overview
+The Boston datasets I used were up-to-date at the time of my analysis. These were extracted in September 2022 by Airbnb Inside and the originals can be found [here](http://insideairbnb.com/explore). Airbnb Inside regularly provides up-to-date datasets for most major cities around the world.
+
+The datasets are composed of 3 files which can be found in the `Datasets` folder of this repository. Those 3 files cover:
+- Listings.csv which includes the full description of each properties, owner datails and several review kpis and scores
+- Reviews.csv which includes unique id for each reviewer and detailed comments
+- Calendar.csv which includes property id, the daily rental price and availability by day from September 15, 2022 onwards. This file provides a snapshot of the reservations as of september and looking forward into the year 2023.
+
+# Key Business questions and project challenge
+The analysis will answer 6 business questions as follows:
+1. Price seasonality during the year - By how much do prices spike?
+2. What are the busiest times of the year to visit Boston?
+3. Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston?
+4. Can you describe the vibe of each Boston neighborhood using listing descriptions?
+5. Can you predict the rental price of a new property based on available features ?
+6. Can the property text description from the host improve the prediction ?
+
+Key challenge comes from the following real-life constraint: We want to provide the best possible prediction model for an new Airbnb property assuming we will not have part of the datailed KPis regarding reviews and host. Indeed, this being a new property added to Airbnb, we assume we can only rely on the property detailed description, localization and service offering prepared by the future new host.
 
 
-# Questions
-- Can you describe the vibe of each Boston neighborhood using listing descriptions?
-- What are the busiest times of the year to visit Boston? By how much do prices spike?
-- Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Boston?
 
 
 
@@ -13,5 +40,8 @@ Blogpost project for Udacity's Data Scientist Nanodegree
 
 
 
-# Acknowledgement
-This dataset is part of Airbnb Inside, and the original source can be found [here](http://insideairbnb.com/explore)
+
+
+
+
+
