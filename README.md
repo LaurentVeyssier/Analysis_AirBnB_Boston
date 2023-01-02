@@ -84,3 +84,9 @@ Our prediction error has a nice gaussian distribution shape. This means the erro
 Using Shap library, we finally explore the influence of most influential features on price. These appear to be the room type, the capacity and various facility/service offering (paid-parking, fully-serviced, gym, elevator...). Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount. Finally, the property localization through latitude and longitude also has an influence, diminishing prices as we move away from the center.
 
 ![](assets/features_shap_values.png)
+
+# Project conclusion
+
+The regression model achieves a RMSE of 58 and explains over 75% of the price variance. We have identified most influential features and those having less impact. Based on these results, a new host, missing price-point references, could use our model and findings to better assess a realistic price and leverage specific amenities particularly valued by guests.
+
+As next steps for further analysis, it could be interesting to test fully-connected neural network or try to extend our approach to forecasting "daily" prices using the calendar dataset to also apprehend price seasonality.
