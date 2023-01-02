@@ -58,6 +58,8 @@ Key price predictors appear to be the room type, the housing capacity and the fa
 
 Using natural language processing to extract key information such as word frequencies from the owner's description brought additional precision to the prediction model.
 
+We explored the influence of main features on price. These appear to be the room type, the housing capacity and the facility/service offering such as fully-serviced places. Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount.
+
 ![](../assets/predictions_vs_real.png)
 
 
@@ -70,8 +72,6 @@ We observed the steady growth in both Airbnb offering and the number of visits.
 Data analytics and natural language processing, applied to the short description of the neighborhoods from the host, enabled to prepare a profile of each of them. 
 
 Finally we used the characteristics of Airbnb properties to train a machine learning model and predict the rental price of a given location.
-
-Using specific tools, we explored the influence of main features on price. These appear to be the room type, the housing capacity and the facility/service offering such as fully-serviced places. Such amenities justify pushing prices up. On the contrary, no private room implies a substantial discount.
 
 
 # Interested to go deeper into the analysis and its technical aspects?
