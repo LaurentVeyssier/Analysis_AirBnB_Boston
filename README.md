@@ -68,10 +68,10 @@ Best performance measured on the test set is achieved with XGBoostRegressor mode
 
 | Metric  | Baseline model | excl. description features | incl. description features |
 | ------------- | ------------- | ------------- | ------------- |
-| RMSE  | 60.3  | 61.9  | 59.0  |
+| RMSE  | 69.3  | 61.9  | 59.0  |
 | R²  | 0.65  | 0.72  | 0.75  |
 
-Both RMSE and R² coefficient improve using text-based description features. 
+Both RMSE and R² coefficient further improve using text-based description features. 
 
 Prediction performance using our best model following hyper-parameter tuning:
 ![]()
